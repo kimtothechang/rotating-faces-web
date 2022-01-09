@@ -65,14 +65,9 @@ body {
 .plane .plane__title h2 {
   font-size: 30px;
   position: absolute;
-  top: -40px;
-  opacity: 0;
-  transition: all 0.5s;
-}
-
-.plane:hover div > h2 {
-  opacity: 1;
   top: 20px;
+  opacity: 1;
+  transition: all 0.5s;
   transform: scale(1.2);
   text-shadow: 0px 0px 10px plum;
 }
@@ -133,4 +128,13 @@ body {
   box-shadow: 0px 0px 5px aqua;
   margin-bottom: 10px;
   padding: 10px;
+}
+
+.card__container {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.plane:hover > .card__container {
+  opacity: 1;
 }
